@@ -103,7 +103,7 @@ h2 {
 .logo-img {
   position: absolute;
 }
-.logo-text {
+.logo-text-top {
   color: #4D4D4D;
   font-size: 18px;
   left: 30px;
@@ -111,5 +111,14 @@ h2 {
   line-height: 17px;
   position: absolute;
   top: 37px;
+}
+.logo-text-bottom {
+  color: #4D4D4D;
+  font-size: 18px;
+  left: 30px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  position: absolute;
+  top: 53px;
 }
 
