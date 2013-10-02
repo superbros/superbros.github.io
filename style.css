@@ -99,26 +99,44 @@ h2 {
   position: relative;
   width: 96px;
   height: 110px;
+  font-size: 17px;
+  color: #4D4D4D;
 }
 .logo-img {
+  background: url('/images/logo_bg.png');
   position: absolute;
+  width: 96px;
+  height: 110px;
 }
-.logo-text-top {
-  color: #4D4D4D;
-  font-size: 18px;
-  left: 30px;
-  letter-spacing: 1px;
-  line-height: 17px;
+.logo-text-1 {
   position: absolute;
-  top: 37px;
+  top: 35px;
+  left: 31px;
 }
-.logo-text-bottom {
-  color: #4D4D4D;
-  font-size: 18px;
-  left: 30px;
-  letter-spacing: 1px;
-  line-height: 17px;
+.logo-text-2 {
+  position: absolute;
+  top: 35px;
+  left: 42px;
+}
+.logo-text-3 {
+  position: absolute;
+  top: 35px;
+  left: 53px;
+}
+.logo-text-4 {
   position: absolute;
   top: 53px;
+  left: 31px;
 }
+.logo-text-5 {
+  position: absolute;
+  top: 53px;
+  left: 42px;
+}
+.logo-text-6 {
+  position: absolute;
+  top: 53px;
+  left: 54px;
+}
+
 
