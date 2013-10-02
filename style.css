@@ -1,0 +1,61 @@
+body {
+  font-family: 'Anaheim', sans-serif;
+}
+
+.navigation {
+  background: #4d4d4f;
+  height: 110px;
+}
+
+.navigation-left {
+  width: 200px;
+  float: left;
+  text-align: right;
+}
+
+.nav-link {
+  color: #FFFFFF;
+}
+.nav-link-current {
+  color: #838383;
+}
+
+.navigation-right {
+  float: left;
+  width: 200px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.nav-list > li {
+  display: inline-block;
+  line-height: 90px;
+  height: 90px;
+  padding: 0 10px;
+}
+
+.logo {
+  float: left;
+  font-family: 'Graduate', cursive;
+  position: relative;
+  width: 96px;
+  height: 110px;
+}
+.logo-img {
+  position: absolute;
+}
+.logo-text {
+  position: absolute;
+  font-size: 15px;
+  left: 32px;
+  letter-spacing: 2px;
+  top: 37px;
+  color: #4d4d4f;
+}
+
+a {
+  text-decoration: none;
+}

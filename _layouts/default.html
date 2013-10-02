@@ -3,13 +3,59 @@
 <head>
 <meta charset="utf-8"/>
 <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
-<link rel="stylesheet" href="{{site.baseurl}}/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Anaheim|Graduate' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{site.baseurl}}style.css" />
+<style>
+{% if page.fg %}
+  .navigation { background: #{{ page.fg }};}
+  .logo-text { color: #{{ page.fg }};}
+{% endif %}
+{% if page.bg %}
+  body { background: #{{ page.bg }};}
+  .nav-link-current { color: #{{page.bg}}; }
+{% endif %}
+</style>
 </head>
 <body>
 
+<div class="navigation">
+  <div class="navigation-left">
+    <ul class="nav-list">
+      {% for link in site.navigation_left %}
+        {% assign current = nill %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign current = '-current' %}
+        {% endif %}
+        <li><!--
+          {{ page.url }} - {{ link.url }} - - {{ page.layout }} - {{ link.layout }}-->
+          <a class="nav-link{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="logo"><img class="logo-img" src="/images/logo_bg.png">
+    <span class="logo-text">SPR<br>BRS</span></div>
+
+  <div class="navigation-right">
+    <ul class="nav-list">
+      {% for link in site.navigation_right %}
+        {% assign current = nill %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign current = '-current' %}
+        {% endif %}
+        <li><!--
+          {{ page.url }} - {{ link.url }} - - {{ page.layout }} - {{ link.layout }}-->
+          <a class="nav-link{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
 {{ content }}
 
 </body>
 
 </html>
+
