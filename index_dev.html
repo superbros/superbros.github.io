@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-<div class="column-one">
-  <h2>projects</h2>
-</div>
-<div class="column-two">
-  <h2>news</h2>
-</div>
-<div class="column-three">
-  <h2>info</h2>
-  {% include info_block.html %}
+<div class="three-columns">
+  <div class="column-one">
+    <div class="column-one-inner">
+      <h2>projects</h2>
+    </div>
+  </div>
+  <div class="column-two">
+    <div class="column-two-inner">
+      <h2>news</h2>
+    </div>
+  </div>
+  <div class="column-three">
+    <div class="column-three-inner">
+      <h2>info</h2>
+      {% include info_block.html %}
+    </div>
+  </div>
 </div>

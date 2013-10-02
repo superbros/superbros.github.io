@@ -1,14 +1,70 @@
 body {
   font-family: 'Anaheim', sans-serif;
+  color: #4d4d4d;
+  font-size: 13px;
 }
+a {
+  text-decoration: none;
+}
+.page {
+  width: 940px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Layout Styles */
+
+
+.column-one-inner {
+  border-right: 1px dashed #4d4d4d;
+  padding: 0 10px;
+}
+.two-columns .column-two-inner {
+  padding: 0 10px;
+}
+.three-columns .column-two-inner {
+  border-right: 1px dashed #4d4d4d;
+  padding: 0 10px;
+}
+.column-three-inner {
+  padding: 0 10px;
+}
+
+.three-columns .column-one {
+  width: 365px;
+  float: left;
+}
+.three-columns .column-two {
+  width: 365px;
+  float: left;
+}
+.three-columns .column-three {
+  width: 210px;
+  float: left;
+}
+
+.two-columns .column-one {
+  width: 365px;
+  float: left;
+}
+.two-columns .column-two {
+  width: 574px;
+  float: left;
+}
+
+/* Navigation Styles */
 
 .navigation {
   background: #4d4d4f;
   height: 110px;
+  margin-bottom: 10px;
 }
 
 .navigation-left {
-  width: 200px;
+  width: 316px;
   float: left;
   text-align: right;
 }
@@ -53,9 +109,6 @@ body {
   left: 32px;
   letter-spacing: 2px;
   top: 37px;
-  color: #4d4d4f;
+  color: #4d4d4d;
 }
 
-a {
-  text-decoration: none;
-}
