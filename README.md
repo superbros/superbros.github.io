@@ -1,2 +1,2 @@
-![](//Mars.gif)
+![](/images/Mercury.gif)
 SuperBros website
