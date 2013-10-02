@@ -104,11 +104,12 @@ h2 {
   position: absolute;
 }
 .logo-text {
+  color: #4D4D4D;
+  font-size: 18px;
+  left: 30px;
+  letter-spacing: 1px;
+  line-height: 17px;
   position: absolute;
-  font-size: 15px;
-  left: 32px;
-  letter-spacing: 2px;
   top: 37px;
-  color: #4d4d4d;
 }
 
