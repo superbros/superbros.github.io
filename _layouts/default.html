@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
 <link href='http://fonts.googleapis.com/css?family=Anaheim|Graduate' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{site.baseurl}}style.css" />
+<link rel="stylesheet" href="/css/style.css" />
 <style>
 {% if page.fg %}
   .navigation { background: #{{ page.fg }};}
@@ -34,15 +34,7 @@
       </ul>
     </div>
 
-    <div class="logo">
-      <span class="logo-img"> </span>
-      <span class="logo-text-1">S</span>
-      <span class="logo-text-2">P</span>
-      <span class="logo-text-3">R</span>
-      <span class="logo-text-4">B</span>
-      <span class="logo-text-5">R</span>
-      <span class="logo-text-6">S</span>
-    </div>
+  {% include logo.html %}
 
     <div class="navigation-right">
       <ul class="nav-list">

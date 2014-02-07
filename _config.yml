@@ -4,6 +4,8 @@ author: superbros
 author_email: me@lucabrenna.com
 url: http://www.superbros.co.uk
 
+exclude: [config.rb, Gemfile, CNAME, README.md]
+
 navigation_left:
 - text: home
   url: /index_dev.html

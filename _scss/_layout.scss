@@ -1,0 +1,37 @@
+
+.column-one-inner {
+  border-right: 1px dashed #4d4d4d;
+  padding: 0 10px;
+}
+.two-columns .column-two-inner {
+  padding: 0 10px;
+}
+.three-columns .column-two-inner {
+  border-right: 1px dashed #4d4d4d;
+  padding: 0 10px;
+}
+.column-three-inner {
+  padding: 0 10px;
+}
+
+.three-columns .column-one {
+  width: 365px;
+  float: left;
+}
+.three-columns .column-two {
+  width: 365px;
+  float: left;
+}
+.three-columns .column-three {
+  width: 210px;
+  float: left;
+}
+
+.two-columns .column-one {
+  width: 365px;
+  float: left;
+}
+.two-columns .column-two {
+  width: 574px;
+  float: left;
+}
