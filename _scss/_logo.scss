@@ -1,0 +1,46 @@
+
+.logo {
+  margin: 0 auto;
+  font-family: 'Graduate', cursive;
+  position: relative;
+  width: 96px;
+  height: 110px;
+  font-size: 17px;
+  color: #4D4D4D;
+}
+.logo-img {
+  background: url('../img/logo_bg.png');
+  position: absolute;
+  width: 96px;
+  height: 110px;
+}
+.logo-text-1 {
+  position: absolute;
+  top: 37px;
+  left: 31px;
+}
+.logo-text-2 {
+  position: absolute;
+  top: 37px;
+  left: 42px;
+}
+.logo-text-3 {
+  position: absolute;
+  top: 37px;
+  left: 53px;
+}
+.logo-text-4 {
+  position: absolute;
+  top: 53px;
+  left: 31px;
+}
+.logo-text-5 {
+  position: absolute;
+  top: 53px;
+  left: 42px;
+}
+.logo-text-6 {
+  position: absolute;
+  top: 53px;
+  left: 54px;
+}

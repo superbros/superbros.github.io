@@ -1,0 +1,36 @@
+---
+layout: html
+---
+
+<header id="header">
+  <div class="header-inner">
+    <div class="header-nav-left">
+      <ul class="header-nav-list right hide-for-small-only">
+        <li><a href="/index_dev.html">home</a></li>
+        <li><a href="/projects/">projects</a></li>
+      </ul>
+    </div>
+    <div class="header-nav-logo">
+      {% include logo.html %}
+    </div>
+    <div class="header-nav-right">
+      <ul class="header-nav-list hide-for-small-only">
+        <li><a href="/news/">news</a></li>
+        <li><a href="/contact/">contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div id="page">
+  {{ content }}
+</div>
+
+<div class="footer show-for-small-only">
+  <ul class="inline-list">
+    <li><a href="/index_dev.html" class="button tiny secondary">home</a></li>
+    <li><a href="/projects/" class="button tiny secondary">projects</a></li>
+    <li><a href="/news/" class="button tiny secondary">news</a></li>
+    <li><a href="/contact/" class="button tiny secondary">contact</a></li>
+  </ul>
+</div>

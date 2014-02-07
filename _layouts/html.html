@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Anaheim|Graduate' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <style>
+      {% if page.fg %}
+        #header { background: #{{ page.fg }};}
+        .logo { color: #{{ page.fg }};}
+      {% endif %}
+      {% if page.bg %}
+        body { background: #{{ page.bg }};}
+        .header-nav-list > li > a { color: #{{page.bg}}; }
+      {% endif %}
+    </style>
+
+    <script src="/js/modernizr.js"></script>
+  </head>
+  <body>
+
+    {{ content }}
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

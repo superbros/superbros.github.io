@@ -1,4 +1,12 @@
 ---
-layout: default
+layout: news
+title: News
 ---
-news page goes here
+
+    {% for post in site.categories.news %}
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}" alt=""><br>
+        <h2>{{ post.title }}</h2>
+      </a>
+      {{ post.except }}
+    {% endfor %}

@@ -1,21 +1,32 @@
 ---
-layout: default
+layout: page
 ---
-<div class="three-columns">
-  <div class="column-one">
-    <div class="column-one-inner">
-      <h2>projects</h2>
-    </div>
+
+
+<div class="l-three-col">
+  <div class="l-three-col-left">
+    <h2>news</h2>
+    {% for post in site.categories.news %}
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}" alt=""><br>
+        <h2>{{ post.title }}</h2>
+      </a>
+      {{ post.except }}
+    {% endfor %}
+</ul>
   </div>
-  <div class="column-two">
-    <div class="column-two-inner">
-      <h2>news</h2>
-    </div>
+  <div class="l-three-col-mid">
+    <h2>projects</h2>
+    {% for post in site.categories.project %}
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}" alt=""><br>
+        <h2>{{ post.title }}</h2>
+      </a>
+      {{ post.except }}
+    {% endfor %}
   </div>
-  <div class="column-three">
-    <div class="column-three-inner">
-      <h2>info</h2>
-      {% include info_block.html %}
-    </div>
+  <div class="l-three-col-right">
+    <h2>info</h2>
+    {% include info_block.html %}
   </div>
 </div>

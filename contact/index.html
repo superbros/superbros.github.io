@@ -1,18 +1,38 @@
 ---
-layout: default
+layout: page
 title: Contact
 ---
-<div class="two-columns">
-  <div class="column-one">
-    <div class="column-one-inner">
-      <h2>contact</h2>
-      {% include info_block.html %}
-    </div>
+
+<div class="l-two-col-swap">
+  <div class="l-two-col-left">
+    <h2>contact</h2>
+    {% include info_block.html %}
   </div>
-  <div class="column-two">
-    <div class="column-two-inner">
-      <!-- Embed google map -->
-      <iframe width="555" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=NW1+5TL&amp;aq=&amp;sll=51.528642,-0.101599&amp;sspn=0.492963,1.234589&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=London+NW1,+United+Kingdom&amp;ll=51.530687,-0.146932&amp;spn=0.015404,0.038581&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://www.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=NW1+5TL&amp;aq=&amp;sll=51.528642,-0.101599&amp;sspn=0.492963,1.234589&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=London+NW1,+United+Kingdom&amp;ll=51.530687,-0.146932&amp;spn=0.015404,0.038581&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+  <div class="l-two-col-right">
+    <h2><!-- map --></h2>
+
+    <style>
+        .google-maps {
+            position: relative;
+            padding-bottom: 55%; // This is the aspect ratio
+            height: 0;
+            overflow: hidden;
+        }
+        .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+
+    <div class="google-maps">
+        <iframe src="https://maps.google.com/maps?q=Unit+1m,+39+Autumn+Street,+London.+E3+2TT" width="635" height="350" frameborder="0" style="border:0"></iframe>
     </div>
+
+
   </div>
 </div>
+
+

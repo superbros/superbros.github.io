@@ -1,3 +1,39 @@
+
+#header {
+  background: $header-bg;
+  margin-bottom: 1.5em;
+}
+
+.header-nav-list {
+  @include inline-list;
+  & > li {
+    & > a {
+      color: #fff;
+    }
+  }
+}
+
+.header-inner {
+  @include grid-row();
+
+  .header-nav-left {
+    @include grid-column(3);
+    margin-top: 3.35em;
+  }
+  .header-nav-logo {
+    @include grid-column(2);
+  }
+  .header-nav-right {
+    @include grid-column(7);
+    margin-top: 3.35em;
+  }
+}
+
+@import "logo";
+
+
+/*
+
 .navigation {
   background: #4d4d4f;
   height: 110px;
@@ -34,48 +70,5 @@
   padding: 0 10px;
 }
 
-.logo {
-  float: left;
-  font-family: 'Graduate', cursive;
-  position: relative;
-  width: 96px;
-  height: 110px;
-  font-size: 17px;
-  color: #4D4D4D;
-}
-.logo-img {
-  background: url('../img/logo_bg.png');
-  position: absolute;
-  width: 96px;
-  height: 110px;
-}
-.logo-text-1 {
-  position: absolute;
-  top: 37px;
-  left: 31px;
-}
-.logo-text-2 {
-  position: absolute;
-  top: 37px;
-  left: 42px;
-}
-.logo-text-3 {
-  position: absolute;
-  top: 37px;
-  left: 53px;
-}
-.logo-text-4 {
-  position: absolute;
-  top: 53px;
-  left: 31px;
-}
-.logo-text-5 {
-  position: absolute;
-  top: 53px;
-  left: 42px;
-}
-.logo-text-6 {
-  position: absolute;
-  top: 53px;
-  left: 54px;
-}
+
+*/

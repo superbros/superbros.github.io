@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+<div class="l-two-col">
+  <div class="l-two-col-left">
+    <h2>{{ page.title | downcase }}</h2>
+    {{ content }}
+  </div>
+  <div class="l-two-col-right">
+    <h2>info</h2>
+    {% include info_block.html %}
+  </div>
+</div>
