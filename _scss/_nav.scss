@@ -13,6 +13,17 @@
   }
 }
 
+.mobile-nav {
+  @include button-group-container;
+  & > li {
+    @include button-group-style($even: 4);
+    & > a {
+      @include button($bg: #fff, $full-width: true);
+    }
+  }
+}
+
+
 .header-inner {
   @include grid-row();
 
@@ -28,6 +39,79 @@
     margin-top: 3.35em;
   }
 }
+
+@media #{$small-only} {
+  .page-footer {
+    border-top: 1px dashed $border-color;
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  .page-footer-social {
+    display: none;
+  }
+}
+
+@media #{$medium-up} {
+  .page-footer {
+    @include grid-row();
+    padding-top: 0.5em;
+    margin-top: 2em;
+    border-top: 1px dashed $border-color;
+
+    .page-footer-name {
+      @include grid-column($columns: 3);
+      text-align: center;
+    }
+    .page-footer-phone {
+      @include grid-column($columns: 3);
+      border-left: 1px dashed $border-color;
+      text-align: center;
+    }
+    .page-footer-mail {
+      @include grid-column($columns: 3);
+      border-left: 1px dashed $border-color;
+      border-right: 1px dashed $border-color;
+      text-align: center;
+    }
+    .page-footer-social {
+      @include grid-column($columns: 3);
+      text-align: center;
+    }
+  }
+}
+
+
+@media #{$large-up} {
+  .page-footer {
+    @include grid-row();
+    padding-top: 0.5em;
+    margin-top: 2em;
+    border-top: 1px dashed $border-color;
+
+    .page-footer-name {
+      @include grid-column($columns: 2, $offset: 2);
+      text-align: center;
+    }
+    .page-footer-phone {
+      @include grid-column(2);
+      border-left: 1px dashed $border-color;
+      text-align: center;
+    }
+    .page-footer-mail {
+      @include grid-column(2);
+      border-left: 1px dashed $border-color;
+      border-right: 1px dashed $border-color;
+      text-align: center;
+    }
+    .page-footer-social {
+      @include grid-column(2);
+      text-align: center;
+    }
+  }
+}
+
+
 
 @import "logo";
 

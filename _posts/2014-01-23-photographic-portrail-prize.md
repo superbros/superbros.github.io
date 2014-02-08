@@ -4,6 +4,7 @@ title: Photographic Portrait Prize 2013
 categories: news
 permalink: /news/photographic-portrail-prize-2013.html
 image: /img/news/TWPPP13.jpg
+excerpt: We highly recommend to go and check The Taylor Wessing Photographic Portrait Prize 2013 exhibition at the National Portrait Gallery.
 ---
 
 We highly recommend to go and check The Taylor Wessing Photographic Portrait

@@ -4,26 +4,33 @@ layout: page
 
 
 <div class="l-three-col">
-  <div class="l-three-col-left">
-    <h2>news</h2>
-    {% for post in site.categories.news %}
-      <a href="{{ post.url }}">
-        <img src="{{ post.image }}" alt=""><br>
-        <h2>{{ post.title }}</h2>
-      </a>
-      {{ post.except }}
-    {% endfor %}
-</ul>
-  </div>
   <div class="l-three-col-mid">
     <h2>projects</h2>
     {% for post in site.categories.project %}
+    <div class="project-teaser">
       <a href="{{ post.url }}">
         <img src="{{ post.image }}" alt=""><br>
-        <h2>{{ post.title }}</h2>
+        <h3>{{ post.title }}</h3>
       </a>
-      {{ post.except }}
+      {{ post.excerpt }}
+      <a href="{{ post.url }}" class="read-more">read more</a>
+    </div>
     {% endfor %}
+  </div>
+  <div class="l-three-col-left">
+    <h2>news</h2>
+    {% for post in site.categories.news %}
+    <div class="news-teaser">
+      <a href="{{ post.url }}">
+        <h3>{{ post.title }}</h3>
+      </a>
+      <p>{{ post.date | date: "%-d %B %Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}" class="read-more">read more</a>
+    </div>
+    <div class="separator"><i class="icon icon-separator"></i></div>
+    {% endfor %}
+</ul>
   </div>
   <div class="l-three-col-right">
     <h2>info</h2>

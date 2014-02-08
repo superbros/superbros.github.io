@@ -14,6 +14,21 @@
   }
 }
 
+.l-full {
+  @include grid-row();
+  .l-full-inner {
+    @include grid-column(12);
+  }
+}
+
+.l-four-col {
+  @include grid-row();
+  min-height: 600px;
+
+  .l-four-col-item {
+    @include grid-column(3);
+  }
+}
 
 @media #{$medium-up} {
 

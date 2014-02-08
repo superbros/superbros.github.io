@@ -1,12 +1,22 @@
 ---
-layout: news
+layout: page
 title: Projects
 ---
 
-    {% for post in site.categories.project %}
-      <a href="{{ post.url }}">
-        <img src="{{ post.image }}" alt=""><br>
-        <h2>{{ post.title }}</h2>
-      </a>
-      {{ post.except }}
-    {% endfor %}
+<div class="l-full">
+  <div class="l-full-inner">
+    <h2>projects</h2>
+  </div>
+</div>
+
+<div class="l-four-col">
+{% for post in site.categories.project %}
+  <div class="l-four-col-item">
+    <a href="{{ post.url }}">
+      <img src="{{ post.image }}" alt=""><br>
+      <h2>{{ post.title }}</h2>
+    </a>
+    {{ post.except }}
+  </div>
+{% endfor %}
+</div>

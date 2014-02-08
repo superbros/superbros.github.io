@@ -7,6 +7,7 @@ image: /img/projects/303955492_960.jpg
 video: http://player.vimeo.com/video/43777731
 fg: fee29d
 bg: ffffff
+excerpt: Video animation for wepickcherries.com
 ---
 
 Video animation for [wepickcherries.com](wepickcherries.com)

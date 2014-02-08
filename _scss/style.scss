@@ -5,3 +5,104 @@
 @import "base";
 @import "layout";
 @import "nav";
+
+h2 {
+  margin-bottom: 1em;
+}
+
+.project-teaser {
+  margin-bottom: 2em;
+  position: relative;
+
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+  }
+}
+
+.news-teaser {
+
+  .read-more {
+    position: relative;
+    top: -1em;
+  }
+}
+
+@font-face {
+  font-family: "Entypo";
+  src: url("../fonts/entypo.eot");
+  src: url("../fonts/entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype"), url("../fonts/entypo.svg#entypo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EntypoSocial";
+  src: url("../fonts/entypo-social.eot");
+  src: url("../fonts/entypo-social.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo-social.woff") format("woff"), url("../fonts/entypo-social.ttf") format("truetype"), url("../fonts/entypo-social.svg#entypo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.social-links {
+  @include inline-list;
+  & > li {
+    &:not(:first-child) {
+      margin-left: 0.5em;
+    }
+    & > a {
+      background: $body-font-color;
+      color: #fff;
+      display: block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      border-radius: 3px;
+    }
+  }
+}
+
+.icon:before {
+  font-family: "Entypo";
+  speak: none;
+  font-size: 2em;
+  line-height: 0.75em;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-separator:before {
+  content: "\25CF";
+}
+
+.separator {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+
+.icon-facebook:before {
+  font-family: "EntypoSocial";
+  content: "\F30C";
+}
+.icon-twitter:before {
+  font-family: "EntypoSocial";
+  content: "\F315";
+}
+.icon-behance:before {
+  font-family: "EntypoSocial";
+  content: "\F34E";
+}
+.icon-googleplus:before {
+  font-family: "EntypoSocial";
+  content: "\F30F";
+}
+
+
+
+
+
+
