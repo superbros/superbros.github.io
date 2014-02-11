@@ -7,7 +7,7 @@ title: News
   <a href="{{ post.url }}">
     <h3>{{ post.title }}</h3>
   </a>
-  <p>{{ post.date | date: "%-d %B %Y" }}</p>
+  <p class="post-meta">{{ post.date | date: "%-d %B %Y" }}</p>
   <p>{{ post.excerpt }}</p>
   <img src="{{ post.image }}" alt=""><br>
   <div class="separator"><i class="icon icon-separator"></i></div>
