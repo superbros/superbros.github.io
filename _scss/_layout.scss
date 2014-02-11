@@ -36,15 +36,15 @@
   @include grid-row();
 
   .l-three-col-left {
-    @include grid-column(4);
+    @include grid-column(5);
     border-right: 1px dashed $border-color;
   }
   .l-three-col-mid {
-    @include grid-column(4);
+    @include grid-column(5);
     border-right: 1px dashed $border-color;
   }
   .l-three-col-right {
-    @include grid-column(4);
+    @include grid-column(2);
   }
 }
 
