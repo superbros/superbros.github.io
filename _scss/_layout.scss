@@ -53,11 +53,11 @@
   @include grid-row();
 
   .l-two-col-left {
-    @include grid-column(8);
+    @include grid-column(10);
     border-right: 1px dashed $border-color;
   }
   .l-two-col-right {
-    @include grid-column(4);
+    @include grid-column(2);
   }
 }
 
@@ -66,10 +66,10 @@
   @include grid-row();
 
   .l-two-col-left {
-    @include grid-column(4);
+    @include grid-column(2);
   }
   .l-two-col-right {
-    @include grid-column(8);
+    @include grid-column(10);
     border-left: 1px dashed $border-color;
   }
 }

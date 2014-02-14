@@ -95,6 +95,21 @@ h3 {
   margin-top: 0;
 }
 
+.icon-left:before {
+  font-size: 4em;
+  line-height: 0.25em;
+  content: "\25C2";
+}
+.icon-up:before {
+  font-size: 4em;
+  line-height: 0.25em;
+  content: "\25B4";
+}
+.icon-right:before {
+  font-size: 4em;
+  line-height: 0.25em;
+  content: "\25B8";
+}
 
 .icon-facebook:before {
   font-family: "EntypoSocial";
@@ -113,6 +128,9 @@ h3 {
   content: "\F30F";
 }
 
+.google-maps {
+  margin-top: 4em;
+}
 
 
 

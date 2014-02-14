@@ -4,17 +4,26 @@ layout: page
 
 <div class="l-two-col">
   <div class="l-two-col-left">
-    <h2>{{ page.title | downcase }}</h2>
+
+    <div class="project-nav clearfix">
+      <ul class="right">
+        <li><a href="#"><i class="icon icon-left fg-color"></i></a></li>
+        <li><a href="#"><i class="icon icon-up fg-color"></i></a></li>
+        <li><a href="#"><i class="icon icon-right fg-color"></i></a></li>
+      </ul>
+    </div>
 
     <div class="flex-video widescreen vimeo">
       <iframe src="{{ page.video }}" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
 
-    {{ content }}
 
   </div>
   <div class="l-two-col-right">
-    <h2>info</h2>
-    {% include info_block.html %}
+    <h2 class="project-title">{{ page.title | downcase }}</h2>
+
+    {{ content }}
   </div>
 </div>
+
+{% include footer.html %}

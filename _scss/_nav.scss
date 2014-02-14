@@ -23,20 +23,27 @@
   }
 }
 
+h2.project-title {
+  margin-top: 0.75em;
+}
+.project-nav > ul {
+  @include inline-list;
+  margin-bottom: 0;
+}
 
 .header-inner {
   @include grid-row();
 
   .header-nav-left {
     @include grid-column(4);
-    margin-top: 3.35em;
+    margin-top: 3.55em;
   }
   .header-nav-logo {
     @include grid-column(2);
   }
   .header-nav-right {
     @include grid-column(6);
-    margin-top: 3.35em;
+    margin-top: 3.55em;
   }
 }
 
