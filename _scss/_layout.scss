@@ -1,4 +1,15 @@
 
+.l-grid-3 {
+
+  @include grid-row($behavior: nest);
+
+  .l-grid-item {
+    @include grid-column(4);
+    margin-bottom: $column-gutter;
+  }
+}
+
+
 @media #{$small-only} {
   #page {
     padding: 0 1em;

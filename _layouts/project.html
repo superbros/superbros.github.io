@@ -17,6 +17,14 @@ layout: page
       <iframe src="{{ page.video }}" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
 
+    <div class="l-grid-3">
+    {% for frame in page.style_frames %}
+      <div class="l-grid-item">
+        <img src="{{ frame }}" alt="">
+      </div>
+    {% endfor %}
+    </div>
+
 
   </div>
   <div class="l-two-col-right">
