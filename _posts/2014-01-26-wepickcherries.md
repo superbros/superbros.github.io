@@ -20,6 +20,5 @@ style_frames:
 
 Video animation for [wepickcherries.com](wepickcherries.com)
 
-Animation, design and art direction: Luca Brenna <br>
-Sound design: Zen Death Squad <br>
-Project management: Amy Hart
+Sound design: <br>Zen Death Squad <br>
+Project management: <br>Amy Hart
