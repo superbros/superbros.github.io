@@ -26,7 +26,7 @@ layout: page
       </a>
       <p class="post-meta">{{ post.date | date: "%-d %B %Y" }}</p>
       <p>{{ post.excerpt }}</p>
-      <a href="{{ post.url }}" class="read-more">read more</a>
+      <a href="news/#{{ post.id }}" class="read-more">read more</a>
     </div>
     <div class="separator"><i class="icon icon-separator"></i></div>
     {% endfor %}
